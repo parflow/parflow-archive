@@ -1,0 +1,47 @@
+The dates are those of corresponding technical report.
+The resolution of the .ps files is 300dpi to reduce file size.
+
+disclaimer.ps
+	project personnel, mission statement, disclaimer 
+
+publications.ps
+	list of publications		
+
+miss_proceedings.ps					October 1993
+	Modeling groundwater flow on MPPs
+	Ashby, Falgout, Smith, Tompson
+	1993 Parallel Scalable Libraries Conference
+        October 6-8, 1993, Mississippi State University
+	code description and nCUBE/2 results
+
+utah_proceedings.ps					June 1994
+	Numerical simulation of groundwater flow on MPPs
+	Ashby, Falgout, Fogwell, Tompson
+	Fifth SIAM Conf on Applied Linear Algebra
+	preliminary results for LLNL-like problem
+
+ans.proceedings.ps					September 1994
+	Multigrid preconditioned conjugate gradients for the numerical
+           simulation of groundwater flow on the CRAY T3D
+	Ashby, Falgout, Smith, Fogwell
+	ANS International Conference on Mathematics and Computations, 
+        Reactor Physics, and Environmental Analyses, 
+        April 30-May 4, 1995, Portland, OR
+  	multigrid results on T3D
+
+par.proc.95_proceedings.ps				September 1994
+	The parallel performance of a groundwater flow code on the 
+           CRAY T3D
+	Ashby, Falgout, Smith, Tompson
+	Seventh SIAM Conf on Parallel Processing for Scientific Computing
+        February 15-17, 1995, San Francisco, CA
+	ParFlow performance on the T3D,
+
+cug94_proceedings.ps					September 1994
+	A numerical simulation of groundwwater flow and contaminant 
+	   transport on the CRAY T3D and C90 supercomputers
+	Ashby, Bosl, Falgout, Smith, Tompson, Williams
+	34th Cray User Group Conference
+	October 10-14, 1994, Tours, France
+	simulation of flow and transport using 1M spatial zones
+

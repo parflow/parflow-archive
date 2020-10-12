@@ -1,0 +1,143 @@
+<HTML>
+<HEAD>
+<TITLE>ParFlow Project Overview</TITLE>
+</HEAD>
+<body BGCOLOR="#FAF0E6"
+      TEXT="#191964"
+      LINK="#0000FF"
+      VLINK="#6600CC"
+      ALINK="#FFFF00">
+<img src="graphics/overview_banner.gif">
+<P>
+<h1>ParFlow Project Overview</h1>
+<img src="graphics/whiteblue_line.gif">
+<p>
+<H2>Background</H2>
+Groundwater contamination is a major environmental problem throughout
+the world. In the United States, for instance, numerous governmental
+and industrial sites require remediation. The Department of Energy is  
+currently cleaning up several of its contaminated facilities, including the 
+Lawrence Livermore National Laboratory (LLNL). 
+<P>
+
+At LLNL, chemical solvents and petroleum products were dumped onto the 
+ground surface in the 1940s when the present site was a naval air station. 
+LLNL is obligated to characterize the contamination and clean it up. Toward this 
+end, various engineered remediation techniques (e.g., pump-and-treat and 
+biofilters) are now being studied, tested, and implemented. 
+<P>
+<img src="graphics/cartoon.gif">
+<p>
+<STRONG> Contaminants have migrated through the unsaturated zone into 
+the more mobile groundwaters. 
+LLNL is designing and implementing remediation procedures.
+</STRONG>
+<P>
+To understand better the efficacy of a given cleanup strategy, as well
+as to determine the most economical implementation for a specific
+site, engineers frequently employ mathematical modeling tools to aid
+in their analysis and design of remediation procedures. Unfortunately,
+many models are based on unrealistic assumptions about the subsurface
+media and its flow behavior. For example, many models 
+ignore the fact that the subsurface is heterogeneous in composition
+and in spatial distribution. These simple homogeneous models are
+incapable of capturing important physical phenomena (such as
+fingering) that have a significant impact on contaminant migration.  
+<P>
+Another flaw of many models is that they employ outdated and
+inefficient numerical methods, which preclude running realistic
+simulations on even the largest conventional vector supercomputers. Consequently, 
+remediation strategies based on these simplistic models often perform poorly 
+(e.g., miss the plume or take too long to clean it up). To compensate, site 
+managers over-engineer the remediation process, which increases costs. 
+<P>
+To address these deficiencies, we are developing ParFlow, a simulator for
+modeling fluid flow through heterogeneous porous media. To enable
+detailed simulations of large sites, this code uses the latest
+numerical methods and high-performance computing technologies. 
+These simulations provide site managers with a more realistic picture of contaminant migration, thereby enabling a more cost-effective cleanup strategy.
+<P>
+<H2>
+Enabling Detailed Simulations
+</H2>
+
+The ParFlow simulator is being used to study groundwater flow and contaminant
+migration at several sites, including LLNL. The size of these sites (usually sev
+eral
+square kilometers) and the need to resolve the subsurface heterogeneities (to wi
+thin
+a few meters) result in grids with more than one million spatial zones.
+<p>
+Since one never has this much hard data about the subsurface composition, we
+employ geostatistical techniques to generate statistically accurate subsurface r
+ealizations
+from the given field data. We then discretize the modeling equations and solve t
+he
+resulting linear system with a multigrid-preconditioned conjugate gradient algor
+ithm.
+This yields the flow velocity field, which is then passed to an advection code t
+o simulate
+contaminant migration. At present, we have the option of using a particle-in-cel
+l code
+with reactive chemistry or a grid-based Godunov method.
+<p>
+As seen in the <a href="simulations.shtml">simulations</a>, the heterogeneities lead to
+complicated flow paths, which result in the rapid spreading of the plume.
+Unlike other codes, the ParFlow simulator is capable of capturing these
+important effects.
+<H2>
+Portable and Scalable
+</H2>
+
+The ParFlow simulator is portable across a variety of computing platforms, rangi
+ng from workstations to massively parallel computers. Most of our simulations ar
+e run on the CRAY T3D, but we also have run on the IBM SP-1, nCUBE/2, SGI Onyx,
+and a cluster of Sun Sparcstations. We have demonstrated scalability on each of
+the MPP platforms, which means that our code makes efficient use of the addition
+al processors needed for bigger simulations. Our solver is especially fast: we h
+ave solved realistic flow problems involving eight million spatial zones in just
+ 13 seconds on a 256-processor CRAY T3D.
+<p>
+<H2>Graphical User Interface</H2>
+
+We are developing a graphical user interface (GUI) to enhance ParFlow's 
+ease-of-use. This GUI allows the user to define the subsurface conceptual model (via the Army's 
+<a href="http://www.et.byu.edu/~geos/software/gms/gms.html">GMS package</a>), 
+to specify pumping wells and other input parameters (via pop-up windows), 
+and to visualize the results (via <a href="http://www.avs.com">AVS</a> or Explorer), as well as to customize the simulator and machine configurations.
+<p>
+This GUI runs on a variety of platforms, which makes it easier for users to move
+from one machine to another. For example, an engineer can run preliminary
+simulations on an in-house workstation and then run detailed simulations on a
+remote MPP, without knowing anything about the underlying architecture.
+<P>
+<MAP NAME=nav_bar>
+<AREA SHAPE=rect COORDS="0,0,  115,24" HREF="overview.shtml">
+<AREA SHAPE=rect COORDS="2,23, 115,50" HREF="team.shtml">
+<AREA SHAPE=rect COORDS="115,0,  230,22" HREF="simulations.shtml">
+<AREA SHAPE=rect COORDS="115,23, 230,50" HREF="collab.shtml">
+<AREA SHAPE=rect COORDS="230,0,  344,22" HREF="publications.shtml">
+<AREA SHAPE=rect COORDS="230,22, 344,50" HREF="sponsors.shtml">
+<AREA SHAPE=rect COORDS="344,0,  456,22" HREF="related_topics.shtml">
+<AREA SHAPE=rect COORDS="344,22, 456,50" HREF="more_info.shtml">
+<AREA SHAPE=default  HREF="index.html">
+</MAP>
+<IMG SRC="graphics/new_nav_bar.gif" USEMAP="#nav_bar">
+<BR>
+<MAP NAME=retn_bar>
+<AREA SHAPE=rect COORDS="6,4,   113,45" HREF="https://computation.llnl.gov/casc/parflow/">
+<AREA SHAPE=rect COORDS="119,4, 226,45" HREF="https://computation.llnl.gov/casc/">
+<AREA SHAPE=rect COORDS="235,4, 340,45" HREF="http://www.llnl.gov/sccd/">
+<AREA SHAPE=rect COORDS="348,4, 455,45" HREF="http://www.llnl.gov/">
+<AREA SHAPE=default  HREF="index.html">
+</MAP>
+<IMG SRC="graphics/four_retns.gif" USEMAP="#retn_bar">
+<P>
+Last modified: October 15, 1996<BR>
+<B>UCRL-TB-118581 Rev. 1</B><BR>
+<A HREF="http://www.llnl.gov/"> LLNL Home Page</A>
+<A HREF="http://www.llnl.gov/disclaimer.html"> LLNL Disclaimer </A>
+<BR>
+<!--#exec cgi="/CASC/parflow/AccessCounts/counter.cgi" -->
+</body>
+</html>

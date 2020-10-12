@@ -1,0 +1,109 @@
+<HTML>
+<HEAD>
+<TITLE>ParFlow Simulations</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FAF0E6"
+      TEXT="#191964"
+      LINK="#0000FF"
+      VLINK="#6600CC"
+      ALINK="#FFFF00">
+<P>
+<img src="graphics/simul_banner.gif">
+<H1><a name="gallery">Numerical Simulations</a></H1>
+<img src="graphics/whiteblue_line.gif">
+<P>
+As seen in the simulations below, subsurface heterogeneities have a
+profound impact on contaminant migration. 
+These heterogeneities must be taken into account if one wishes to draw
+reliable conclusions about a given remediation strategy.
+In order to resolve these heterogeneities adequately, especially on
+large sites, one must use millions of spatial zones.
+The goal of the ParFlow Project is to enable such detailed simulations
+by effectively harnessing the power of massively parallel processing.
+<P>
+<img src="graphics/whiteblue_line.gif">
+<BR>
+<H2>LLNL Site Simulations</H2>
+<p>
+<H3>Simulations of contaminant migration through homogeneous and heterogeneous subsurface models:</H3><br>
+<TABLE  CELLSPACING="10" WIDTH="90%">
+<TR><TD WIDTH="20%">
+<a href="graphics/homlayer.gif"><img align="top" src="graphics/homlayer.sm.gif"></a>
+</TD>
+<TD WIDTH="70%">
+<B>A hypothetical subsurface realization with five
+homogeneous layers, an impermeable clay region (orange), and a fault
+zone (red diagonal).
+The top layer is the most permeable, then the second, and so on.
+</B> (GIF 11 K)
+</TD></TR>
+<TR><TD WIDTH="20%">
+<a href="graphics/hetlayer.gif"><img align="top" src="graphics/hetlayer.sm.gif"></a>
+</TD>
+<TD WIDTH="70%">
+<B>The same subsurface realization as before, but with
+heterogeneous layers.
+The variability within each layer was reproduced via a turning bands
+algorithm.</B> (GIF 35 K)
+</TD></TR>
+<TR><TD WIDTH="20%">
+<a href="graphics/flowchan.gif"><img align="top" src="graphics/flowchan.sm.gif"></a>
+</TD>
+<TD WIDTH="70%">
+<B>Subsurface heterogeneities give rise to preferential flow channels. These channels, which are not representable in homogeneous codes, lead to
+fingering in the contaminant migration, resulting in much more
+rapid dispersion of the contaminant.</B>
+(GIF 30 K)
+</TD></TR>
+<TR><TD WIDTH="20%">
+<a href="graphics/homog.mpg"><img align="top" src="graphics/hom0175.sm.gif"></a>
+</TD>
+<TD WIDTH="70%">
+<B>A snapshot in time of contaminant migration through
+the subsurface (hypothetical, multilayered, homogeneous realization).
+The clay layer is now shown in brown and the fault zone is represented
+by the blue plane. The isosurface is colored according to the underlying hydraulic conductivity. Note the effect of the layers.</B>(MPEG 190 K)
+</TD></TR>
+<TR><TD WIDTH="20%">
+<a href="graphics/heterog.mpg"><img align="top" src="graphics/het2750.sm.gif"></a>
+</TD>
+<TD WIDTH="70%">
+<B>A snapshot (at the same point in time as before) of
+contaminant migration 
+through the same subsurface but with heterogeneous layers.
+The isosurface is colored according to the underlying hydraulic
+conductivity.
+Note the dramatic effect of including heterogeneities within each
+layer.</B> (MPEG 221 K)
+</TD></TR>
+</TABLE>
+<p>
+<MAP NAME=nav_bar>
+<AREA SHAPE=rect COORDS="0,0,  115,24" HREF="overview.shtml">
+<AREA SHAPE=rect COORDS="2,23, 115,50" HREF="team.shtml">
+<AREA SHAPE=rect COORDS="115,0,  230,22" HREF="simulations.shtml">
+<AREA SHAPE=rect COORDS="115,23, 230,50" HREF="collab.shtml">
+<AREA SHAPE=rect COORDS="230,0,  344,22" HREF="publications.shtml">
+<AREA SHAPE=rect COORDS="230,22, 344,50" HREF="sponsors.shtml">
+<AREA SHAPE=rect COORDS="344,0,  456,22" HREF="related_topics.shtml">
+<AREA SHAPE=rect COORDS="344,22, 456,50" HREF="more_info.shtml">
+<AREA SHAPE=default  HREF="index.html">
+</MAP>
+<IMG SRC="graphics/new_nav_bar.gif" USEMAP="#nav_bar">
+<BR>
+<MAP NAME=retn_bar>
+<AREA SHAPE=rect COORDS="6,4 ,  113,45" HREF="https://computation.llnl.gov/casc/parflow/">
+<AREA SHAPE=rect COORDS="119,4, 226,45" HREF="https://computation.llnl.gov/casc/">
+<AREA SHAPE=rect COORDS="235,4, 340,45" HREF="http://www.llnl.gov/sccd/">
+<AREA SHAPE=rect COORDS="348,4, 455,45" HREF="http://www.llnl.gov/">
+<AREA SHAPE=default  HREF="index.html">
+</MAP>
+<IMG SRC="graphics/four_retns.gif" USEMAP="#retn_bar">
+<P>
+Last modified: July 30, 1998<BR>
+<B>UCRL-TB-118581 Rev. 1</B><BR>
+<A HREF="http://www.llnl.gov/"> LLNL Home Page</A>
+<A HREF="http://www.llnl.gov/disclaimer.html"> LLNL Disclaimer </A>
+<BR><!--#exec cgi="/CASC/parflow/AccessCounts/counter.cgi" -->
+</body>
+</html>
